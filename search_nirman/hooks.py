@@ -242,3 +242,15 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+fixtures = [
+    {
+        "dt": "DocType",
+        "filters": [
+            ["module", "=", "NIRMAN"]  # This exports ALL custom DocTypes including their fields
+        ]
+    },
+    {
+        "dt": "Custom Field",   # Required if you added fields to standard DocTypes (e.g., Sales Invoice)
+    }
+]
